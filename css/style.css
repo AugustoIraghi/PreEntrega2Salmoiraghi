@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -76,4 +76,29 @@ footer {
     img{
         height: 40vh;
     }
+}
+ */
+body{
+    background: rgb(174,238,221);
+    background: linear-gradient(0deg, rgba(174,238,221,1) 0%, rgba(148,187,233,1) 100%);
+}
+.galeria{
+    margin: 40px 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galeria img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 30px;
+}
+.galeria__img{
+    transition: transform 0.5s;
+}
+.galeria__img:hover{
+    transform: scale(1.8);
+    object-fit: contain;
 }
